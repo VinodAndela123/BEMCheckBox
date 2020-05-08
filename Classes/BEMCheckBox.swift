@@ -353,8 +353,8 @@ public class BEMCheckBox: UIControl, CAAnimationDelegate {
             checkMarkLayer = CAShapeLayer()
             checkMarkLayer?.rasterizationScale = 2.0 * UIScreen.main.scale
             checkMarkLayer?.shouldRasterize = true
-            checkMarkLayer?.lineCap = .round
-            checkMarkLayer?.lineJoin = .round
+            checkMarkLayer?.lineCap = .butt
+            checkMarkLayer?.lineJoin = .miter
         }
         
         checkMarkLayer?.frame = bounds
